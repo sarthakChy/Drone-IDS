@@ -13,8 +13,11 @@
 # Run using created plan and storing the tlog with different name.
 -> Tools/autotest/sim_vehicle.py -v ArduCopter -f quad --out=udp:127.0.0.1:14550 --mavproxy-args="--mission=sample.plan --logfile=sample.tlog"
 
--> make sure the plan is saved inside ardupilot only for easy accessing. 
+# multiple streams
+-> Tools/autotest/sim_vehicle.py -v ArduCopter -f quad --mavproxy-args="--mission=corridor_scan.plan --logfile=live_streaming.tlog --out=udp:127.0.0.1:14550 --out=udp:127.0.0.1:14551"
 
+-> make sure the plan is saved inside ardupilot only for easy accessing. 
+    
 # parsing to csv
 -> python3 parse_tlog.py sample.tlog 0 (for normal plans)
 -> python3 parse_tlog.py sample.tlog 1 (for attack plans)

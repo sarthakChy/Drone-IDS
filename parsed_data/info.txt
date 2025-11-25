@@ -1,0 +1,68 @@
+keeping the same corridor scan path
+
+normal_corridor_base_*
+
+1 to 5 = 50m height (done)
+
+6 to 10 = 30m height (done)
+
+11-15 = 70m height (done)
+
+
+attack_corridor_base_*
+
+1 to 3 = 50m height + attack(ATTACK_LAT = 35.3600  
+ATTACK_LON = 149.1600  
+ATTACK_ALT = 30) with different wait time (reach the false location & didnt come back to mission)
+
+
+4 to 5 = 50m height + attack(ATTACK_LAT = -35.3600  
+ATTACK_LON = -149.1600  
+ATTACK_ALT = 30) with different wait time (reach the false location & didnt come back to mission)
+
+6 = 50m height + 150 yawl
+
+7 = 50m height + # ATTACK_LAT = -55.3600
+# ATTACK_LON = 160.1600
+# ATTACK_ALT = 45
+# ATTACK_YAW_DEGREES = 180 # Face South
+# ATTACK_YAW_RADIANS = math.radians(ATTACK_YAW_DEGREES) (came back to the mission & completed)
+
+8 = 50m height + ATTACK_LAT = -55.3600
+ATTACK_LON = -160.1600
+ATTACK_ALT = 45
+ATTACK_YAW_DEGREES = 250 # Face South
+ATTACK_YAW_RADIANS = math.radians(ATTACK_YAW_DEGREES)(came back to mission & completed)
+
+9 = 50m ATTACK_LAT = 35.3600
+ATTACK_LON = 130.1600
+ATTACK_ALT = 45
+ATTACK_YAW_DEGREES = 100 # Face South
+ATTACK_YAW_RADIANS = math.radians(ATTACK_YAW_DEGREES)(came back to mission & completed)
+
+10 = 30m ATTACK_LAT = 55.3600
+ATTACK_LON = 160.1600
+ATTACK_ALT = 45
+ATTACK_YAW_DEGREES = 200 # Face South
+ATTACK_YAW_RADIANS = math.radians(ATTACK_YAW_DEGREES)(came back to mission & completed)
+
+11 = 30m 
+
+12 = 30m + 100yawl
+
+13 = 30m
+
+14 = 70m(for few waypoint) 50m(for rest) ATTACK_LAT = 35.3600
+ATTACK_LON = 100.1600
+ATTACK_ALT = 45
+ATTACK_YAW_DEGREES = 50 # Face South
+ATTACK_YAW_RADIANS = math.radians(ATTACK_YAW_DEGREES)(came back to mission & completed)(type added as pos_yawl_alt)
+
+15 = 70m(for few waypoint) 50m(for rest) 200yawl + 100yawl (type added as yawl_alt)
+
+16 = 70m(for few waypoint) 50m(for rest) + ATTACK_LAT = -35.3600  # Example Latitude
+ATTACK_LON = 149.1600  # Example Longitude
+ATTACK_ALT = 30        # Example Altitude
+WAIT_BEFORE_ATTACK = 5
+GUIDED_MODE_COPTER = 4 (didnt came back to mission) (type added as pos_alt)
+
